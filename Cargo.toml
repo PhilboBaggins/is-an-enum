@@ -1,6 +1,13 @@
 [package]
 name = "is-an-enum"
 version = "0.1.0"
+edition = "2018"
 authors = ["Phil <PhilboBaggins@users.noreply.github.com>"]
 
+[lib]
+proc-macro = true
+
 [dependencies]
+proc-macro2 = "0.4"
+syn = "0.15.33"
+quote = "0.6.12"
