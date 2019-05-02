@@ -2,7 +2,6 @@ use is_an_enum::*;
 
 #[allow(dead_code)]
 #[derive(IsAnEnum)]
-#[derive(PartialEq)]
 enum Day {
     Sunday,
     Monday,

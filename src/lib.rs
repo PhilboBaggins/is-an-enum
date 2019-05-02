@@ -26,17 +26,17 @@ pub fn is_an_enum(input: TokenStream) -> TokenStream {
         let func_name = Ident::new(&func_name_str, Span::call_site());
         quote! {
             #[inline]
-            pub fn #func_name(&self) -> bool { self.is_a(#enum_name::#variant_name) }
+            pub fn #func_name(&self) -> bool {
+                match self {
+                    #enum_name::#variant_name => true,
+                    _ => false,
+                }
+            }
         }
     });
 
     let expanded = quote! {
         impl #enum_name {
-            #[inline]
-            pub fn is_a(&self, x: #enum_name) -> bool {
-                *self == x
-            }
-
             #(#funcs_for_variants)*
         }
     };
