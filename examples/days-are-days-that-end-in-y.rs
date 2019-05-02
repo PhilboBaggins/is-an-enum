@@ -21,7 +21,7 @@ impl Day {
 }
 
 fn main() {
-    if Day::Sunday.is_a(Day::Sunday) && Day::Sunday.does_it_end_in_y() {
+    if Day::Sunday.is_a_sunday() && Day::Sunday.does_it_end_in_y() {
         println!("Sunday is a Sunday and it ends in \"y\"");
     } else {
         println!("The world is ending");
