@@ -3,6 +3,9 @@ name = "is-an-enum"
 version = "0.1.0"
 edition = "2018"
 authors = ["Phil <PhilboBaggins@users.noreply.github.com>"]
+description = "Rust derive macro that `is_a_*() -> bool` functions for each item in an enum"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/PhilboBaggins/is-an-enum"
 
 [lib]
 proc-macro = true
