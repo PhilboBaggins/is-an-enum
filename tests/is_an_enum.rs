@@ -14,33 +14,33 @@ enum Day {
 
 #[test]
 fn is_it_a_sunday() {
-    assert!(true  == Day::Sunday.is_a_sunday());
-    assert!(false == Day::Sunday.is_a_monday());
-    assert!(false == Day::Sunday.is_a_tuesday());
-    assert!(false == Day::Sunday.is_a_wednesday());
-    assert!(false == Day::Sunday.is_a_thursday());
-    assert!(false == Day::Sunday.is_a_friday());
-    assert!(false == Day::Sunday.is_a_saturday());
+    assert_eq!(true,  Day::Sunday.is_a_sunday());
+    assert_eq!(false, Day::Sunday.is_a_monday());
+    assert_eq!(false, Day::Sunday.is_a_tuesday());
+    assert_eq!(false, Day::Sunday.is_a_wednesday());
+    assert_eq!(false, Day::Sunday.is_a_thursday());
+    assert_eq!(false, Day::Sunday.is_a_friday());
+    assert_eq!(false, Day::Sunday.is_a_saturday());
 }
 
 #[test]
 fn is_it_a_monday() {
-    assert!(false == Day::Monday.is_a_sunday());
-    assert!(true  == Day::Monday.is_a_monday());
-    assert!(false == Day::Monday.is_a_tuesday());
-    assert!(false == Day::Monday.is_a_wednesday());
-    assert!(false == Day::Monday.is_a_thursday());
-    assert!(false == Day::Monday.is_a_friday());
-    assert!(false == Day::Monday.is_a_saturday());
+    assert_eq!(false, Day::Monday.is_a_sunday());
+    assert_eq!(true,  Day::Monday.is_a_monday());
+    assert_eq!(false, Day::Monday.is_a_tuesday());
+    assert_eq!(false, Day::Monday.is_a_wednesday());
+    assert_eq!(false, Day::Monday.is_a_thursday());
+    assert_eq!(false, Day::Monday.is_a_friday());
+    assert_eq!(false, Day::Monday.is_a_saturday());
 }
 
 #[test]
 fn is_it_a_tuesday() {
-    assert!(false == Day::Tuesday.is_a_sunday());
-    assert!(false == Day::Tuesday.is_a_monday());
-    assert!(true  == Day::Tuesday.is_a_tuesday());
-    assert!(false == Day::Tuesday.is_a_wednesday());
-    assert!(false == Day::Tuesday.is_a_thursday());
-    assert!(false == Day::Tuesday.is_a_friday());
-    assert!(false == Day::Tuesday.is_a_saturday());
+    assert_eq!(false, Day::Tuesday.is_a_sunday());
+    assert_eq!(false, Day::Tuesday.is_a_monday());
+    assert_eq!(true,  Day::Tuesday.is_a_tuesday());
+    assert_eq!(false, Day::Tuesday.is_a_wednesday());
+    assert_eq!(false, Day::Tuesday.is_a_thursday());
+    assert_eq!(false, Day::Tuesday.is_a_friday());
+    assert_eq!(false, Day::Tuesday.is_a_saturday());
 }
