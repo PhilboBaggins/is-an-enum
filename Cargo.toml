@@ -11,9 +11,9 @@ repository = "https://github.com/PhilboBaggins/is-an-enum"
 proc-macro = true
 
 [dependencies]
-proc-macro2 = "0.4"
-syn = "0.15.33"
-quote = "0.6.12"
+proc-macro2 = "1.0.6"
+syn = "1.0.9"
+quote = "1.0.2"
 
 [dev-dependencies]
 cargo-husky = "1"
